@@ -1,2 +1,3 @@
 *.db
 .env
+keys.json
