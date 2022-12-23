@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def extract_data():
+def extract_data() -> list:
     SCOPES = [os.environ.get('SCOPE')]
     SERVICE_ACCOUNT_FILE = os.environ.get('KEYS_PATH')
     SHEET_ID = os.environ.get('SHEET_ID')
