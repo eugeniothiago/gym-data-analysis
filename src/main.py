@@ -12,7 +12,6 @@ from utils import (
     create_dataframe,
     set_columns,
     treat_column_names,
-    retrieve_db_column_names,
     table_type,
 )
 
