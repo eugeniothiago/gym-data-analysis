@@ -20,6 +20,13 @@ def main():
     df_clean = transform_data(df_raw)
     load_data(df=df_raw, data_type="raw")
     load_data(df=df_clean, data_type="clean")
+    
+    x = 4*5
+    #testando f-strings no streamlit:
+    st.markdown(f"# Teste de app: {x}")
+    st.write(px.line(data_frame=df_clean, x='dia',y='volume_total_kg', template='plotly_white'))
+    st.write(df_clean)
+    st.dataframe(df_clean)
 
 
 if __name__ == "__main__":
