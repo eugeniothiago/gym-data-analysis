@@ -7,10 +7,6 @@ from utils import treat_column_names, set_columns
 
 load_dotenv()
 
-clean_columns = [
-    "dia",
-]
-
 
 def treat_custom_values(x):
     x = eval(x)
